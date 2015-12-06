@@ -5,12 +5,10 @@ var timer;
 var mode = false;
 
 $(document).keyup(function(e) {
-    input += e.which;    
-    
-    clearTimeout(timer);
-    timer = setTimeout(function() { input = ""; }, 500); //RESETS INPUT IF TAKES TOO LONG
-    
-    check_input();
+	input += e.which;    
+	clearTimeout(timer);
+	timer = setTimeout(function() { input = ""; }, 500); //RESETS INPUT IF TAKES TOO LONG
+    	check_input();
 });
 
 function check_input() {
