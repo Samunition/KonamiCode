@@ -20,6 +20,6 @@ function check_input() {
 }
 
 $(document).ready(function() {
-    setInterval(function() { $('#info').html('Keystroke: ' + input); }, 100);
+	setInterval(function() { $('#info').html('Keystroke: ' + input); }, 100);
 });
 });
