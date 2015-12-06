@@ -7,7 +7,7 @@ var mode = false;
 $(document).keyup(function(e) {
 	input += e.which;    
 	clearTimeout(timer);
-	timer = setTimeout(function() { input = ""; }, 500); //RESETS INPUT IF TAKES TOO LONG
+	timer = setTimeout(function() { input = ""; }, 500);
     	check_input();
 });
 
@@ -15,7 +15,7 @@ function check_input() {
 	if(input == secret) {
         //THIS IS WHERE YOU PUT WHAT YOU WANT TO HAPPEN
         //FOR EXAMPLE
-        //document.getElementById("main").innerHTML = "<h1>This worked!</h1>";
+        //alert("It worked!");
 	}
 }
 
